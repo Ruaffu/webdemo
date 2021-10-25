@@ -5,9 +5,34 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<h1><%= "Hello World!" %>
+<h1><%= "up and running!" %>
 </h1>
+
+jeg glæder mig til sommer
+
+<h2>Get Form</h2>
+
+<form action="hello-servlet", method="get">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<h2>Post Form</h2>
+
+<form action="hello-servlet", method="post">
+    <label for="pfname">First name:</label><br>
+    <input type="text" id="pfname" name="fname" value="John"><br>
+    <label for="plname">Last name:</label><br>
+    <input type="text" id="plname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
 <br/>
-<a href="hello-servlet">Hello Servlet</a>
+<br/>
+<br/>
+<a href="hello-servlet">link to servelet</a>
 </body>
 </html>
